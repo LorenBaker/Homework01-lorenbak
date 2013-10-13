@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">HDR 001 - lorenbak</string>
+    <string name="app_name">CP210: Homework 1 - lorenbak</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="btnStart">Start</string>
-	<string name="btnStartHint">Starts Green Activity</string>
+    <string name="btnStartHint">Starts Green Activity</string>
+
 </resources>
