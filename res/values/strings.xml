@@ -3,8 +3,10 @@
 
     <string name="app_name">CP210: Homework 1 - lorenbak</string>
     <string name="action_settings">Settings</string>
+    <string name="action_orientation">Device Orientation</string>
     <string name="hello_world">Hello world!</string>
     <string name="btnStart">Start</string>
     <string name="btnStartHint">Starts Green Activity</string>
+    <string name="OK">OK</string>
 
 </resources>
