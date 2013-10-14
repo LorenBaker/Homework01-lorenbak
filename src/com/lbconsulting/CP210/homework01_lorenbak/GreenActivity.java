@@ -1,17 +1,11 @@
 package com.lbconsulting.CP210.homework01_lorenbak;
 
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.Context;
-import android.content.DialogInterface;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Display;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.Surface;
-import android.view.WindowManager;
 import android.widget.Toast;
 
 public class GreenActivity extends Activity {
@@ -66,7 +60,6 @@ public class GreenActivity extends Activity {
 		if (L)
 			Log.i(TAG, "GreenActivity onPause"
 					+ (isFinishing() ? " Finishing" : ""));
-
 	}
 
 	@Override
@@ -160,13 +153,14 @@ public class GreenActivity extends Activity {
 
 		switch (item.getItemId()) {
 
-		case R.id.orientation:
-			this.ShowDeviceOrientation();
+		case R.id.action_orientation:
+			DeviceOrientation deviceOrientation = new DeviceOrientation(this);
+			deviceOrientation.ShowOrientationDialog();
 			return true;
 
 		case R.id.action_settings:
 			// TODO code menu masterListSettings
-			msg = "This activity has no settings.";
+			msg = this.getString(R.string.NoActivitySettings);
 			Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG)
 					.show();
 			return true;
@@ -181,68 +175,5 @@ public class GreenActivity extends Activity {
 
 	private void doCreate(Bundle savedInstanceState) {
 		setContentView(R.layout.activity_green);
-
-	}
-
-	private void ShowDeviceOrientation() {
-
-		Display display = ((WindowManager) this
-				.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
-		int rotation = display.getRotation();
-
-		/*
-		 * If a device has a naturally tall screen, and the user has turned it
-		 * on its side to go into a landscape orientation, the value returned
-		 * here may be either Surface.ROTATION_90 or Surface.ROTATION_270
-		 * depending on the direction it was turned. The angle is the rotation
-		 * of the drawn graphics on the screen, which is the opposite direction
-		 * of the physical rotation of the device. For example, if the device is
-		 * rotated 90 degrees counter-clockwise, to compensate rendering will be
-		 * rotated by 90 degrees clockwise and thus the returned value here will
-		 * be Surface.ROTATION_90.
-		 */
-
-		String msg = "";
-		switch (rotation) {
-		case Surface.ROTATION_0:
-			msg = "Natural portrait orientation.\nNot turned.";
-			break;
-
-		case Surface.ROTATION_90:
-			msg = "Landscape orientation.\nTurned 90 degrees counter-clockwise.";
-			break;
-
-		case Surface.ROTATION_180:
-			msg = "Portrait orientation.\nTurned 180 degrees.";
-			break;
-
-		case Surface.ROTATION_270:
-			msg = "Landscape orientation.\nTurned 90 degrees clockwise.";
-			break;
-
-		default:
-			msg = "Device orientation not found!";
-			break;
-		}
-
-		this.ShowOrientationDialog(msg);
-	}
-
-	private void ShowOrientationDialog(String message) {
-		// Show a dialog so the user can input the new List's Title.
-		AlertDialog.Builder dialog = new AlertDialog.Builder(this);
-
-		dialog.setTitle("Device Orientation");
-		dialog.setMessage(message);
-
-		dialog.setPositiveButton(getString(R.string.OK),
-				new DialogInterface.OnClickListener() {
-
-					@Override
-					public void onClick(DialogInterface dialog, int whichButton) {
-						// Do nothing
-					}
-				});
-		dialog.show();
 	}
 }

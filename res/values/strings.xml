@@ -3,10 +3,16 @@
 
     <string name="app_name">CP210: Homework 1 - lorenbak</string>
     <string name="action_settings">Settings</string>
-    <string name="action_orientation">Device Orientation</string>
     <string name="hello_world">Hello world!</string>
     <string name="btnStart">Start</string>
     <string name="btnStartHint">Starts Green Activity</string>
     <string name="OK">OK</string>
+    <string name="action_orientation">Device Orientation</string>
+    <string name="NaturalPortrait">Natural portrait orientation.\nNot turned.</string>
+    <string name="Landscape90Degrees">Landscape orientation.\nTurned 90 degrees counter-clockwise.</string>
+    <string name="Portrait180Degrees">Portrait orientation.\nTurned 180 degrees.</string>
+    <string name="Landscape270Degrees">Landscape orientation.\nTurned 90 degrees clockwise.</string>
+    <string name="OrientationNotFound">Device orientation not found!</string>
+    <string name="NoActivitySettings">This activity has no settings.</string>
 
 </resources>
