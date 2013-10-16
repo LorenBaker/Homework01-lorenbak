@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CP210: Hausaufgaben 1 - lorenbak</string>
+    <string name="action_settings">Konfigurationen</string>
+    <string name="btnStart">Starten</string>
+    <string name="OK">Weiterführen</string>
+    <string name="action_orientation">Hardware orientierung</string>
+    <string name="NaturalPortrait"> Natürlich vertikale orientierung.\nKeine drehung.</string>
+    <string name="Landscape90Degrees"> Horizontale orientierung.\nUm 90 Grad gegen uhrzeigersinn drehen.</string>
+    <string name="Portrait180Degrees"> Vertikale orientierung.\nUm 180 Grad.</string>
+    <string name="Landscape270Degrees"> Horizontale orientierung.\nUm 90 Grad im uhrzeigersinn drehen.</string>
+    <string name="OrientationNotFound">Gerät nicht gefunden!</string>
+    <string name="NoActivitySettings">Diese Aktivität hat keine konfigurationen.</string>
+
+</resources>

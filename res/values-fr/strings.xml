@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CP210: Devoir 1 - lorenbak</string>
+    <string name="action_settings">Paramètres </string>
+    <string name="btnStart">Démarrer</string>
+    <string name="btnStartHint">Commence Vert Activité.</string>
+    <string name="OK">Okay</string>
+    <string name="action_orientation">Orientation du terminal</string>
+    <string name="NaturalPortrait">Naturel orientation portrait.\nPas tourné.</string>
+    <string name="Landscape90Degrees">Orientation de paysage.\nTournée de 90 degrés dans le sens anti-horaire.</string>
+    <string name="Portrait180Degrees">Orientation portrait.\nTournée de 180 degrés.</string>
+    <string name="Landscape270Degrees">Orientation de paysage\nTournée de 90 degrés dans le sens horaire.</string>
+    <string name="OrientationNotFound">Orientation de périphérique non trouvé!</string>
+    <string name="NoActivitySettings">Cette activité n\'a pas de paramètres.</string>
+
+</resources>

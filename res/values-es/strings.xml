@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CP210: Tareas Escolares 1 - lorenbak</string>
+    <string name="action_settings">Configuración</string>
+    <string name="btnStart">Principio</string>
+    <string name="OK">¡está bien!</string>
+    <string name="action_orientation">Orientación del dispositivo</string>
+    <string name="NaturalPortrait">Natural orientación vertical.\nNo gira.</string>
+    <string name="Landscape90Degrees">Orientación horizontal.\nGirar 90 grados en sentido de las agujas del reloj.</string>
+    <string name="Portrait180Degrees">Orientación vertical.\nGira 180 grados.</string>
+    <string name="Landscape270Degrees">Orientación horizontal.\nGirar 90 grados a la derecha.</string>
+    <string name="OrientationNotFound">Orientación del dispositivo no encontrado!</string>
+    <string name="NoActivitySettings">Esta actividad no tiene configuración.</string>
+
+</resources>
