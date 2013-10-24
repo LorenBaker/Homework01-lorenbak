@@ -186,8 +186,7 @@ public class MainActivity extends Activity {
 		btnStartGreenActivity.setOnClickListener(new Button.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent greenActivityIntent = new Intent(MainActivity.this,
-						GreenActivity.class);
+				Intent greenActivityIntent = new Intent(MainActivity.this, GreenActivity.class);
 				/*
 				 * greenActivityIntent.putExtra("key", value); //Optional
 				 * parameters

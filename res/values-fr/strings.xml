@@ -8,8 +8,12 @@
     <string name="OK">Okay</string>
     <string name="action_orientation">Orientation du terminal</string>
     <string name="NaturalPortrait">Naturel orientation portrait.\nPas tourné.</string>
+    <string name="NaturalLandscape">Naturel orientation de paysage.\nPas tourné.</string>
+    <string name="Portrait90Degrees">Orientation portrait.\nTournée de 90 degrés dans le sens anti-horaire.</string>
     <string name="Landscape90Degrees">Orientation de paysage.\nTournée de 90 degrés dans le sens anti-horaire.</string>
     <string name="Portrait180Degrees">Orientation portrait.\nTournée de 180 degrés.</string>
+    <string name="Landscape180Degrees">Orientation de paysage.\nTournée de 180 degrés.</string>
+    <string name="Portrait270Degrees">Orientation portrait\nTournée de 90 degrés dans le sens horaire.</string>
     <string name="Landscape270Degrees">Orientation de paysage\nTournée de 90 degrés dans le sens horaire.</string>
     <string name="OrientationNotFound">Orientation de périphérique non trouvé!</string>
     <string name="NoActivitySettings">Cette activité n\'a pas de paramètres.</string>

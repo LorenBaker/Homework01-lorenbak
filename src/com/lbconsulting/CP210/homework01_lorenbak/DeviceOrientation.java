@@ -3,6 +3,7 @@ package com.lbconsulting.CP210.homework01_lorenbak;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.res.Configuration;
 import android.view.Display;
 import android.view.Surface;
 import android.view.WindowManager;
@@ -20,39 +21,79 @@ public class DeviceOrientation {
 	 */
 	private int rotation;
 	private String orientationMessage = "";
+	private int orientation;
 	private Context context;
 
 	public DeviceOrientation(Context context) {
 		this.context = context;
 
-		Display display = ((WindowManager) this.context
-				.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
+		this.orientation = this.context.getResources().getConfiguration().orientation;
+		Display display = ((WindowManager) this.context.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
 		this.rotation = display.getRotation();
 
 		switch (rotation) {
 		case Surface.ROTATION_0:
-			this.orientationMessage = this.context
-					.getString(R.string.NaturalPortrait);
+			switch (this.orientation) {
+			case Configuration.ORIENTATION_PORTRAIT:
+				this.orientationMessage = this.context.getString(R.string.NaturalPortrait);
+				break;
+
+			case Configuration.ORIENTATION_LANDSCAPE:
+				this.orientationMessage = this.context.getString(R.string.NaturalLandscape);
+				break;
+
+			default:
+				this.orientationMessage = this.context.getString(R.string.OrientationNotFound);
+			}
 			break;
 
 		case Surface.ROTATION_90:
-			this.orientationMessage = this.context
-					.getString(R.string.Landscape90Degrees);
+			switch (this.orientation) {
+			case Configuration.ORIENTATION_PORTRAIT:
+				this.orientationMessage = this.context.getString(R.string.Portrait90Degrees);
+				break;
+
+			case Configuration.ORIENTATION_LANDSCAPE:
+				this.orientationMessage = this.context.getString(R.string.Landscape90Degrees);
+				break;
+
+			default:
+				this.orientationMessage = this.context.getString(R.string.OrientationNotFound);
+			}
 			break;
 
 		case Surface.ROTATION_180:
-			this.orientationMessage = this.context
-					.getString(R.string.Portrait180Degrees);
+			switch (this.orientation) {
+			case Configuration.ORIENTATION_PORTRAIT:
+				this.orientationMessage = this.context.getString(R.string.Portrait180Degrees);
+				break;
+
+			case Configuration.ORIENTATION_LANDSCAPE:
+				this.orientationMessage = this.context.getString(R.string.Landscape180Degrees);
+				break;
+
+			default:
+				this.orientationMessage = this.context.getString(R.string.OrientationNotFound);
+			}
 			break;
 
 		case Surface.ROTATION_270:
-			this.orientationMessage = this.context
-					.getString(R.string.Landscape270Degrees);
+			switch (this.orientation) {
+			case Configuration.ORIENTATION_PORTRAIT:
+				this.orientationMessage = this.context.getString(R.string.Portrait270Degrees);
+				break;
+
+			case Configuration.ORIENTATION_LANDSCAPE:
+				this.orientationMessage = this.context.getString(R.string.Landscape270Degrees);
+				break;
+
+			default:
+				this.orientationMessage = this.context.getString(R.string.OrientationNotFound);
+			}
 			break;
 
 		default:
-			this.orientationMessage = this.context
-					.getString(R.string.OrientationNotFound);
+			this.orientationMessage = this.context.getString(R.string.OrientationNotFound);
 			break;
 		}
 	}
