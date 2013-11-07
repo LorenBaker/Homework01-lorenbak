@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="11"
+        android:minSdkVersion="10"
         android:targetSdkVersion="18" />
 
     <application
@@ -22,9 +22,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-        <activity android:label="@string/app_name" android:name="GreenActivity"/>
-        
+        <activity
+            android:name="GreenActivity"
+            android:label="@string/app_name" />
     </application>
 
 </manifest>
