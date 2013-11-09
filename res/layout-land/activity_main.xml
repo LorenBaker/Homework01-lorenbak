@@ -4,26 +4,13 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     tools:context=".MainActivity" >
-    
-    <Button 
-        android:text="@string/btnStart"
-        android:id="@+id/btnStartGreenActivity"       
-        android:background="@drawable/btn_green" 
-        style="@style/ButtonText"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-         />
 
-<!--     <Button
+    <Button
         android:id="@+id/btnStartGreenActivity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
+        style="@style/ButtonText"
         android:layout_alignParentBottom="true"
-        android:focusableInTouchMode="true"      
-        android:hint="@string/btnStartHint"
-        android:text="@string/btnStart"
-        android:height="64dp"
-        android:width="128dp" /> -->
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_green"
+        android:text="@string/btnStart" />
 
 </RelativeLayout>

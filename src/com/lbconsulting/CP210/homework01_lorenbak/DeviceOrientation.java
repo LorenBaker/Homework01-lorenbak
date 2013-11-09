@@ -24,6 +24,11 @@ public class DeviceOrientation {
 	private int orientation;
 	private Context context;
 
+	/**
+	 * Class constructor that determines the device's orientation and rotation
+	 * 
+	 * @param context
+	 */
 	public DeviceOrientation(Context context) {
 		this.context = context;
 
@@ -106,6 +111,9 @@ public class DeviceOrientation {
 		return this.orientationMessage;
 	}
 
+	/**
+	 * Shows a dialog showing the device's orientation to the user
+	 */
 	public void ShowOrientationDialog() {
 		// Show a dialog showing the device's orientation.
 		AlertDialog.Builder dialog = new AlertDialog.Builder(this.context);
